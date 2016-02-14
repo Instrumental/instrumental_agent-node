@@ -2,13 +2,14 @@
 
 A [Node.js](https://nodejs.org/en/) agent for [Instrumental](https://instrumentalapp.com/).
 
-[On NPM](https://www.npmjs.com/package/instrumental-node)
 
 ## Installation
 
 ````
 npm install instrumental-node
 ````
+
+Package details on [npmjs.com](https://www.npmjs.com/package/instrumental-node)
 
 ## Usage
 
