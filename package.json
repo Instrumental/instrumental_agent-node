@@ -27,5 +27,11 @@
     "should": "8.2.2",
     "istanbul": "0.4.2",
     "mitm": "1.2.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/expectedbehavior/instrumental-node/issues"
+  },
+  "homepage": "https://github.com/expectedbehavior/instrumental-node#readme",
+  "main": "index.js",
+  "author": "Instrumental <support@instrumentalapp.com> (https://instrumentalapp.com/)"
 }

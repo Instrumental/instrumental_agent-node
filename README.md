@@ -10,7 +10,7 @@ npm install instrumental-node
 
 ## Usage
 
-You will need to set the api key to your api key. API keys can be found on your project's settings page. Use the 'enabled' flag to control if the agent actually reports (useful for disabling for dev/staging environments).
+You will need to set the api key to your api key. API keys can be found on [the setup page](https://instrumentalapp.com/docs/setup) or in your project's settings page. Use the 'enabled' flag to control if the agent actually reports. This is useful for not reporting in dev/test/staging/etc. environments.
 
 ````javascript
 var I = require('instrumental-node');
