@@ -13,13 +13,13 @@ npm install instrumental-node
 You will need to set the api key to your api key.  Use 'enabled' to control if the agent actually reports (useful for disabling for dev/staging environments).
 
 ````javascript
-var I = require('instrumental')
+var I = require('instrumental-node');
 I.configure({
 	// from here: https://instrumentalapp.com/docs/setup
 	apiKey			: 'your_api_key',
 
 	// optional, default shown
-	host				: 'collector.instrumentalapp.com',
+	host			: 'collector.instrumentalapp.com',
 
 	// optional, default shown
 	enabled			: true,
