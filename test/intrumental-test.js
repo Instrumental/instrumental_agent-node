@@ -10,7 +10,7 @@ describe('Instrumental', function() {
 
   it('should send gauge calls correctly', function(done) {
     var expectedData = [
-      ['hello version node/instrumental_agent/0.1\n'],
+      ['hello version node/instrumental_agent/0.1.0\n'],
       ['authenticate test\n', 'ok\nok\n'],
       ['gauge test.metric 5 1455477257 1\n']];
     var index = 0;
@@ -40,7 +40,7 @@ describe('Instrumental', function() {
 
   it('should send increment calls correctly', function(done) {
     var expectedData = [
-      ['hello version node/instrumental_agent/0.1\n'],
+      ['hello version node/instrumental_agent/0.1.0\n'],
       ['authenticate test\n', 'ok\nok\n'],
       ['increment test.metric 5 1455477257 1\n']];
     var index = 0;
