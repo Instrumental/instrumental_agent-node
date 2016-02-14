@@ -1,6 +1,6 @@
 # Instrumental for Node
 
-A node.js agent for instrumentalapp.com.
+A [Node.js](https://nodejs.org/en/) agent for [Instrumental](instrumentalapp.com).
 
 ## Installation
 
@@ -10,7 +10,7 @@ npm install instrumental-node
 
 ## Usage
 
-You will need to set the api key to your api key.  Use 'enabled' to control if the agent actually reports (useful for disabling for dev/staging environments).
+You will need to set the api key to your api key. API keys can be found on your project's settings page. Use the 'enabled' flag to control if the agent actually reports (useful for disabling for dev/staging environments).
 
 ````javascript
 var I = require('instrumental-node');
