@@ -1,6 +1,6 @@
 # Instrumental for Node
 
-A [Node.js](https://nodejs.org/en/) agent for [Instrumental](instrumentalapp.com).
+A [Node.js](https://nodejs.org/en/) agent for [Instrumental](https://instrumentalapp.com/).
 
 ## Installation
 
