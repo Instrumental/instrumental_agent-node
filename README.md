@@ -19,10 +19,10 @@ I.configure({
 	apiKey			: 'your_api_key',
 
 	// optional, default shown
-  host				: 'collector.instrumentalapp.com',
+	host				: 'collector.instrumentalapp.com',
 
 	// optional, default shown
-	enabled 		: true,					 
+	enabled			: true,
 });
 
 I.increment('metric.name' /*, value = 1, time = now, count = 1 */);
