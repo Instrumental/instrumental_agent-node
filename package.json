@@ -1,0 +1,30 @@
+{
+  "name": "instrumental-node",
+  "version": "0.1.0",
+  "engines": {
+    "node": "5.1"
+  },
+  "description": "Client for connecting to Instrumental from Node",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/expectedbehavior/instrumental-node.git"
+  },
+  "keywords": [
+    "instrumental"
+  ],
+  "scripts": {
+    "jshint": "jshint *.js test/*.js lib/*.js",
+    "test": "mocha test 2>&1",
+    "coverage": "rm -rf coverage; istanbul cover _mocha -- --recursive --reporter spec --bail"
+  },
+  "dependencies": {
+    "debug": "^2.2.0"
+  },
+  "devDependencies": {
+    "jshint": "2.9.1",
+    "mocha": "2.4.5",
+    "should": "8.2.2",
+    "istanbul": "0.4.2",
+    "mitm": "1.2.0"
+  }
+}
