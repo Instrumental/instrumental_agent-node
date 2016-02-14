@@ -10,8 +10,7 @@ describe('Instrumental', function() {
 
   it('should send gauge calls correctly', function(done) {
     var expectedData = [
-      ['hello version node/instrumental_agent/0.1.0\n'],
-      ['authenticate test\n', 'ok\nok\n'],
+      ['hello version node/instrumental_agent/0.1.0\nauthenticate test\n', 'ok\nok\n'],
       ['gauge test.metric 5 1455477257 1\n']];
     var index = 0;
 
@@ -25,11 +24,11 @@ describe('Instrumental', function() {
         { socket.write(expectedData[index][1]); }
 
         index++;
-        if(index === 3) {
+        if(index === 2) {
           expectedData.push(['gauge test.metric2 0 ' +
             Math.round(Date.now()/1000) + ' 1\n']);
           I.gauge('test.metric2', 0);
-        } else if(index === 4) {
+        } else if(index === 3) {
           done();
         }
       });
@@ -40,8 +39,7 @@ describe('Instrumental', function() {
 
   it('should send increment calls correctly', function(done) {
     var expectedData = [
-      ['hello version node/instrumental_agent/0.1.0\n'],
-      ['authenticate test\n', 'ok\nok\n'],
+      ['hello version node/instrumental_agent/0.1.0\nauthenticate test\n', 'ok\nok\n'],
       ['increment test.metric 5 1455477257 1\n']];
     var index = 0;
 
@@ -55,11 +53,11 @@ describe('Instrumental', function() {
         { socket.write(expectedData[index][1]); }
 
         index++;
-        if(index === 3) {
+        if(index === 2) {
           expectedData.push(['increment test.metric2 1 ' +
             Math.round(Date.now()/1000) + ' 1\n']);
           I.increment('test.metric2');
-        } else if(index === 4) {
+        } else if(index === 3) {
           done();
         }
       });
