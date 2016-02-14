@@ -9,6 +9,7 @@
     "type": "git",
     "url": "git://github.com/expectedbehavior/instrumental-node.git"
   },
+  "license": "MIT",
   "keywords": [
     "instrumental"
   ],
