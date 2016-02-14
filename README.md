@@ -29,3 +29,15 @@ I.increment('metric.name' /*, value = 1, time = now, count = 1 */);
 
 I.gauge('metric.name', 82.12 /*, time = now, count = 1 */);
 ````
+
+# Contributing
+
+Make a PR! Say roughly what you've changed, why you did so, and any ancillary data you have like gotchas, issues you suspect, awesomeness, etc.
+
+# Releasing
+
+* Sign up for npmjs.com
+* merge PR into master
+* bump version
+* update Changelog
+* `npm publish` !
