@@ -58,22 +58,22 @@ describe('Instrumental', function() {
           expectedData.push(['increment test.metric2 1 ' +
             Math.round(Date.now()/1000) + ' 1\n']);
           I.increment('test.metric2');
-	  }
-	  else if(index === 3){
-		  expectedData.push(['increment test.metric3 1 ' +
-			Math.round(Date.now()/1000) + ' 1\n']);
-		  //this should trigger addition to the socket queue.
-		  I.increment('test.metric3');
-		  I.increment('test.metric4');
+    }
+    else if(index === 3){
+      expectedData.push(['increment test.metric3 1 ' +
+      Math.round(Date.now()/1000) + ' 1\n']);
+      //this should trigger addition to the socket queue.
+      I.increment('test.metric3');
+      I.increment('test.metric4');
 
-	  }
-	  else if(index === 4) {
-		  expectedData.push(['increment test.metric4 1 ' +
-		  Math.round(Date.now()/1000) + ' 1\n']);
+    }
+    else if(index === 4) {
+      expectedData.push(['increment test.metric4 1 ' +
+      Math.round(Date.now()/1000) + ' 1\n']);
         }
-	  else if(index === 5){
-		  done();
-	  }
+    else if(index === 5){
+      done();
+    }
       });
     });
 
@@ -97,9 +97,9 @@ describe('Instrumental', function() {
         { socket.write(expectedData[index][1]); }
 
         index++;
-	        if(index === 2) {
-	          done();
-		  	}
+          if(index === 2) {
+            done();
+        }
       });
     });
 
