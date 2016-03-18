@@ -49,5 +49,5 @@ Make a PR! Say roughly what you've changed, why you did so, and any ancillary da
 
 # Cool Contributors :sunglasses:
 
-@spacetc62
-@gmcnaught
+* @spacetc62
+* @gmcnaught
