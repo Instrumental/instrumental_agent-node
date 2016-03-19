@@ -38,7 +38,7 @@ I.increment('metric.name' /*, value = 1, time = now, count = 1 */);
 I.gauge('metric.name', 82.12 /*, time = now, count = 1 */);
 
 // notices
-I.notice('An event occurred' /*, time = now, duration = 0 */);
+I.notice('An event occurred' /*, duration = 0, time = now */);
 ````
 
 
