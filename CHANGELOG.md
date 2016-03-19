@@ -1,7 +1,7 @@
 # instrumental-node Changelog
 
 ## 0.2.0 - 2016/03/19
-* Add Support for [Notices](https://instrumentalapp.com/docs/collector/notice) [#4](https://github.com/expectedbehavior/instrumental-node/pull/4) by @gmcnaught
+* [notices](https://instrumentalapp.com/docs/collector/notice) support added [#4](https://github.com/expectedbehavior/instrumental-node/pull/4) by @gmcnaught
 
 ## 0.1.2 - 2016/03/18
 * **FIX** queued calls should be separated by carriage returns [#3](https://github.com/expectedbehavior/instrumental-node/pull/3) by @gmcnaught
