@@ -103,7 +103,7 @@ describe('Instrumental', function() {
       });
     });
 
-    I.notice(new Date(1455477257165),0,'test is good');
+    I.notice('test is good', new Date(1455477257165), 0);
   });
 
 });
