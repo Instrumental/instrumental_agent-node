@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/expectedbehavior/instrumental-node.svg?branch=master)](https://travis-ci.org/expectedbehavior/instrumental-node)
+
 # Instrumental for Node
 
 A [Node.js](https://nodejs.org/en/) agent for [Instrumental](https://instrumentalapp.com/).
