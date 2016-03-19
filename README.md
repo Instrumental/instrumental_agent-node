@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/expectedbehavior/instrumental-node.svg?branch=master)](https://travis-ci.org/expectedbehavior/instrumental-node)
+[![Build Status](https://travis-ci.org/Instrumental/instrumental-node.svg?branch=master)](https://travis-ci.org/Instrumental/instrumental-node)
 
 # Instrumental for Node
 
