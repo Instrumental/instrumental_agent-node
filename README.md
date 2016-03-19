@@ -59,10 +59,10 @@ Make a PR! Say roughly what you've changed, why you did so, and any ancillary da
 
 * Sign up for npmjs.com
 * merge PR into master
-* bump version
+* bump to <version>
 * update Changelog
-* `npm publish` !
-
+* `npm publish`
+* `git tag <version>`
 
 # Cool Contributors :sunglasses:
 
