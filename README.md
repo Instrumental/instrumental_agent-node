@@ -37,8 +37,14 @@ I.increment('metric.name' /*, value = 1, time = now, count = 1 */);
 // gauges
 I.gauge('metric.name', 82.12 /*, time = now, count = 1 */);
 
+// time a function (seconds), multiplier can allow you to record on a different time period.
+I.time('metric.name', () => { do_something_expensive(arg1); } /*, multiplier = 1, time = now */);
+
+// time a function (milliseconds)
+I.time_ms('metric.name', () => { do_something_expensive(arg1); } /*, time = now */);
+
 // notices
-I.notice('An event occurred' /*, time = now, duration = 0 */);
+I.notice('An event occurred' /*, duration = 0, time = now */);
 ````
 
 
