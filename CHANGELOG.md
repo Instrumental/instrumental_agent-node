@@ -1,5 +1,9 @@
 # instrumental-node Changelog
 
+## Unreleased
+* **BREAKING CHANGE** notice argument order changed - duration and time switched
+* refactored backend for easier forward maintenance
+
 ## 0.2.0 - 2016/03/19
 * [notices](https://instrumentalapp.com/docs/collector/notice) support added [#4](https://github.com/expectedbehavior/instrumental-node/pull/4) by @gmcnaught
 
