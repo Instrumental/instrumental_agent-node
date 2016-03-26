@@ -100,7 +100,7 @@ describe('Instrumental', () => {
     const testFunction = () => {
       function sleepFor(sleepDuration) {
         const now = new Date().getTime();
-        while (new Date().getTime() < now + sleepDuration) { /* do nothing */ }
+        while (new Date().getTime() < now + sleepDuration) { /* do nothing */ 0; }
       }
       sleepFor(10);
       return 42;
