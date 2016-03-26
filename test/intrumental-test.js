@@ -4,7 +4,9 @@ const Instrumental = require('../lib/instrumental');
 const mitm = require('mitm');
 
 require('should');
-const VERSION = require('../package.json').version;
+
+const VERSION    = require('../package.json').version;
+const AUTH_LINES = [`hello version node/instrumental_agent/${VERSION}\nauthenticate test\n`, 'ok\nok\n'];
 
 describe('Instrumental', () => {
   beforeEach(function () { this.mitm = mitm(); });
@@ -12,7 +14,7 @@ describe('Instrumental', () => {
 
   it('should send gauge calls correctly', function (done) {
     const expectedData = [
-      [`hello version node/instrumental_agent/${VERSION}\nauthenticate test\n`, 'ok\nok\n'],
+      AUTH_LINES,
       ['gauge test.metric 5 1455477257 1\n']];
     const I = new Instrumental();
     I.configure({ apiKey: 'test', enabled: true });
@@ -40,7 +42,7 @@ describe('Instrumental', () => {
 
   it('should send increment calls correctly', function (done) {
     const expectedData = [
-      [`hello version node/instrumental_agent/${VERSION}\nauthenticate test\n`, 'ok\nok\n'],
+      AUTH_LINES,
       ['increment test.metric 5 1455477257 1\n']];
     const I = new Instrumental();
     I.configure({ apiKey: 'test', enabled: true });
@@ -76,9 +78,40 @@ describe('Instrumental', () => {
     I.increment('discard.cause.zero', 0);
   });
 
+  it('should time a function properly and return its result', function (done) {
+    const expectedData = [
+      AUTH_LINES,
+      ['gauge test.metric 0.01 1455477257 1\n']];
+    const I = new Instrumental();
+    I.configure({ apiKey: 'test', enabled: true });
+
+    let index = 0;
+
+    this.mitm.on('connection', (socket) => {
+      socket.on('data', (data) => {
+        data.toString().should.equal(expectedData[index][0]);
+        if (expectedData[index][1]) { socket.write(expectedData[index][1]); }
+
+        index++;
+        if (index === 2) { done(); }
+      });
+    });
+
+    const testFunction = () => {
+      function sleepFor(sleepDuration) {
+        const now = new Date().getTime();
+        while (new Date().getTime() < now + sleepDuration) { /* do nothing */ }
+      }
+      sleepFor(10);
+      return 42;
+    };
+    const returnValue = I.time('test.metric', testFunction, 1, new Date(1455477257165));
+    returnValue.should.equal(42);
+  });
+
   it('should send notice calls correctly', function (done) {
     const expectedData = [
-      [`hello version node/instrumental_agent/${VERSION}\nauthenticate test\n`, 'ok\nok\n'],
+      AUTH_LINES,
       ['notice 1455477257 0 test is good\n']];
     const I = new Instrumental();
     I.configure({ apiKey: 'test', enabled: true });

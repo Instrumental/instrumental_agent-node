@@ -37,6 +37,9 @@ I.increment('metric.name' /*, value = 1, time = now, count = 1 */);
 // gauges
 I.gauge('metric.name', 82.12 /*, time = now, count = 1 */);
 
+// time a function (seconds)
+I.time('metric.name', () => { do_something_expensive(arg1); } /*, multiplier = 1, time = now */)
+
 // notices
 I.notice('An event occurred' /*, duration = 0, time = now */);
 ````
