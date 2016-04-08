@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/expectedbehavior/instrumental-node.svg?branch=master)](https://travis-ci.org/expectedbehavior/instrumental-node)
+[![Build Status](https://travis-ci.org/Instrumental/instrumental-node.svg?branch=master)](https://travis-ci.org/Instrumental/instrumental-node)
 
 # Instrumental for Node
 
@@ -8,7 +8,7 @@ You can read more about the protocol this uses in the [Instrumental Collector Do
 
 ## Installation
 
-````
+````shell
 npm install instrumental-node
 ````
 
@@ -21,14 +21,14 @@ You will need to set the api key to your api key. API keys can be found on [the 
 ````javascript
 var I = require('instrumental-node');
 I.configure({
-	// from here: https://instrumentalapp.com/docs/setup
-	apiKey			: 'your_api_key',
+  // from here: https://instrumentalapp.com/docs/setup
+  apiKey:  'your_api_key',
 
-	// optional, default shown
-	host			: 'collector.instrumentalapp.com',
+  // optional, default shown
+  host:    'collector.instrumentalapp.com',
 
-	// optional, default shown
-	enabled			: true,
+  // optional, default shown
+  enabled: true,
 });
 
 // increments
@@ -74,3 +74,4 @@ Make a PR! Say roughly what you've changed, why you did so, and any ancillary da
 
 * @spacetc62
 * @gmcnaught
+* @janxious
