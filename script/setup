@@ -1,0 +1,16 @@
+#!/bin/bash
+set -e
+cd "`dirname \"$0\"`/.."
+
+
+brew list node > /dev/null || brew install node
+
+minimum_java_version="5"
+node_version=$(node -v 2>&1 | awk -F "v" '{print $2}' | awk -F '.' '{print $1}')
+if [[ "$node_version" < "$minimum_java_version" ]]; then
+  echo "Your node version is less than 5, so maybe it won't work. You need a node version that supports ES6."
+  echo "You probably want to `brew upgrade node` to get a newer node version, then re-run this."
+  exit 1
+fi
+
+npm install
