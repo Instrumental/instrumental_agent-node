@@ -127,7 +127,7 @@ describe('Instrumental', () => {
       });
     });
 
-    I.notice('test is good', 0, new Date(1455477257165));
+    I.notice('test is good', new Date(1455477257165), 0);
   });
 
 });

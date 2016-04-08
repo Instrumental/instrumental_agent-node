@@ -44,7 +44,7 @@ I.time('metric.name', () => { do_something_expensive(arg1); } /*, multiplier = 1
 I.time_ms('metric.name', () => { do_something_expensive(arg1); } /*, time = now */);
 
 // notices
-I.notice('An event occurred' /*, duration = 0, time = now */);
+I.notice('An event occurred' /*, time = now, duration = 0 */);
 ````
 
 
