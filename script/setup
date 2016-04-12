@@ -1,9 +1,8 @@
 #!/bin/bash
 set -e
-cd "`dirname \"$0\"`/.."
+cd "$(dirname "$0")/.."
 
-
-brew list node > /dev/null || brew install node
+type node > /dev/null || brew install node
 
 minimum_java_version="5"
 node_version=$(node -v 2>&1 | awk -F "v" '{print $2}' | awk -F '.' '{print $1}')
