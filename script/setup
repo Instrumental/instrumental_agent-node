@@ -4,9 +4,9 @@ cd "$(dirname "$0")/.."
 
 type node > /dev/null || brew install node
 
-minimum_java_version="5"
+minimum_node_version="5"
 node_version=$(node -v 2>&1 | awk -F "v" '{print $2}' | awk -F '.' '{print $1}')
-if [[ "$node_version" < "$minimum_java_version" ]]; then
+if [[ "$node_version" < "$minimum_node_version" ]]; then
   echo "Your node version is less than 5, so maybe it won't work. You need a node version that supports ES6."
   echo "You probably want to upgrade node to a newer version, then re-run this. Here's the command to update node:"
   echo
