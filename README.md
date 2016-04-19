@@ -1,10 +1,10 @@
 [![Build Status](https://travis-ci.org/Instrumental/instrumental-node.svg?branch=master)](https://travis-ci.org/Instrumental/instrumental-node)
 
-# Instrumental for Node
+# Instrumental Node.js  Agent
 
-A [Node.js](https://nodejs.org/en/) agent for [Instrumental](https://instrumentalapp.com/).
+Instrumental is a [application monitoring platform](https://instrumentalapp.com) built for developers who want a better understanding of their production software. Powerful tools, like the [Instrumental Query Language](https://instrumentalapp.com/docs/query-language), combined with an exploration-focused interface allow you to get real answers to complex questions, in real-time.
 
-You can read more about the protocol this uses in the [Instrumental Collector Documentation](https://instrumentalapp.com/docs/collector/readme).
+This agent supports custom metric monitoring for Node.js applications. It provides high-data reliability at high scale, without ever blocking your process or causing an exception. 
 
 ## Installation
 
@@ -16,13 +16,13 @@ Package details on [npmjs.com](https://www.npmjs.com/package/instrumental-node)
 
 ## Usage
 
-You will need to set the api key to your api key. API keys can be found on [the setup page](https://instrumentalapp.com/docs/setup) or in your project's settings page. Use the 'enabled' flag to control if the agent actually reports. This is useful for not reporting in dev/test/staging/etc. environments.
+You will need to set the API token. API tokens can be found in the [project tokens documentation](https://instrumentalapp.com/docs/tokens) or in your user settings page. Use the 'enabled' flag to control if the agent actually reports. This is useful for not reporting in dev/test/staging/etc. environments.
 
 ````javascript
 var I = require('instrumental-node');
 I.configure({
   // from here: https://instrumentalapp.com/docs/setup
-  apiKey:  'your_api_key',
+  apiKey:  'project_api_token',
 
   // optional, default shown
   host:    'collector.instrumentalapp.com',
