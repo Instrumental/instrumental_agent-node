@@ -21,7 +21,7 @@ You will need to set the API token. API tokens can be found in the [project toke
 ````javascript
 var I = require('instrumental-node');
 I.configure({
-  // from here: https://instrumentalapp.com/docs/setup
+  // from here: https://instrumentalapp.com/docs/tokens
   apiKey:  'project_api_token',
 
   // optional, default shown
