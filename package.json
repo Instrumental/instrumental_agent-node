@@ -4,7 +4,7 @@
   "engines": {
     "node": "5.1"
   },
-  "description": "Client for connecting to Instrumental from Node",
+  "description": "Custom metric monitoring for Node applications via Instrumental",
   "repository": {
     "type": "git",
     "url": "git://github.com/instrumental/instrumental-node.git"
