@@ -1,5 +1,8 @@
 # instrumental-node Changelog
 
+## 1.0.0 - 2016/03/19
+* Refactoring, readme updates, and bump to 1.0.
+
 ## 0.2.0 - 2016/03/19
 * [notices](https://instrumentalapp.com/docs/collector/notice) support added [#4](https://github.com/instrumental/instrumental-node/pull/4) by @gmcnaught
 
