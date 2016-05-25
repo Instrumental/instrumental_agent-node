@@ -7,7 +7,7 @@
   "description": "Custom metric monitoring for Node applications via Instrumental",
   "repository": {
     "type": "git",
-    "url": "git://github.com/instrumental/instrumental-node.git"
+    "url": "git://github.com/instrumental/instrumental_agent-node.git"
   },
   "license": "MIT",
   "keywords": [
@@ -29,9 +29,9 @@
     "mitm": "1.2.0"
   },
   "bugs": {
-    "url": "https://github.com/instrumental/instrumental-node/issues"
+    "url": "https://github.com/instrumental/instrumental_agent-node/issues"
   },
-  "homepage": "https://github.com/instrumental/instrumental-node#readme",
+  "homepage": "https://github.com/instrumental/instrumental_agent-node#readme",
   "main": "index.js",
   "author": "Instrumental <support@instrumentalapp.com> (https://instrumentalapp.com/)"
 }
