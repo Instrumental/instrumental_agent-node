@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Instrumental/instrumental-node.svg?branch=master)](https://travis-ci.org/Instrumental/instrumental_agent-node)
+[![Build Status](https://travis-ci.org/Instrumental/instrumental_agent-node.svg?branch=master)](https://travis-ci.org/Instrumental/instrumental_agent-node)
 
 
 # Instrumental Node.js  Agent
