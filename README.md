@@ -5,7 +5,7 @@
 
 Instrumental is a [application monitoring platform](https://instrumentalapp.com) built for developers who want a better understanding of their production software. Powerful tools, like the [Instrumental Query Language](https://instrumentalapp.com/docs/query-language), combined with an exploration-focused interface allow you to get real answers to complex questions, in real-time.
 
-This agent supports custom metric monitoring for Node.js applications. It provides high-data reliability at high scale, without ever blocking your process or causing an exception. 
+This agent supports custom metric monitoring for Node.js applications. It provides high-data reliability at high scale, without ever blocking your process or causing an exception.
 
 ## Installation
 
@@ -58,12 +58,19 @@ Make a PR! Say roughly what you've changed, why you did so, and any ancillary da
 
 # Releasing
 
-* Sign up for npmjs.com
-* merge PR into master
-* bump to <version>
-* update Changelog
-* `npm publish`
-* `git tag <version>`
+1. Sign up for npmjs.com
+2. Pull latest master
+3. Merge feature branch(es) into master
+4. `npm test`
+5. Increment version in repo
+  - `package.json`
+6. Update [CHANGELOG.md](CHANGELOG.md)
+7. Commit "Release version vX.Y.Z"
+8. Push to GitHub
+9. `npm publish`
+10. Tag version: `git tag 'vX.Y.Z' && git push --tags`
+11. Verify update on https://www.npmjs.com/package/instrumental-node
+12. Refresh documentation on instrumentalapp.com
 
 # Cool Contributors :sunglasses:
 
