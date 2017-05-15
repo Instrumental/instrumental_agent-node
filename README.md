@@ -23,7 +23,7 @@ You will need to set the API token. API tokens can be found in the [project toke
 var I = require('instrumental-node');
 I.configure({
   // from here: https://instrumentalapp.com/docs/tokens
-  apiKey:  'project_api_token',
+  apiKey:  'project_token',
 
   // optional, default shown
   host:    'collector.instrumentalapp.com',
