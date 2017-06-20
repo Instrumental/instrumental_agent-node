@@ -1,4 +1,7 @@
-# instrumental-node Changelog
+# instrumental_agent Changelog
+
+## 2.0.2 - 2017/06/20
+* complete rename
 
 ## 2.0.1 - 2017/06/20
 * rename node package `instrumental-node` -> `instrumental_agent`

@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/Instrumental/instrumental_agent-node.svg?branch=master)](https://travis-ci.org/Instrumental/instrumental_agent-node)
 
 
-# Instrumental Node.js  Agent
+# Instrumental Node.js Agent
 
 Instrumental is a [application monitoring platform](https://instrumentalapp.com) built for developers who want a better understanding of their production software. Powerful tools, like the [Instrumental Query Language](https://instrumentalapp.com/docs/query-language), combined with an exploration-focused interface allow you to get real answers to complex questions, in real-time.
 
@@ -10,17 +10,17 @@ This agent supports custom metric monitoring for Node.js applications. It provid
 ## Installation
 
 ````shell
-npm install instrumental-node
+npm install instrumental_agent
 ````
 
-Package details on [npmjs.com](https://www.npmjs.com/package/instrumental-node)
+Package details on [npmjs.com](https://www.npmjs.com/package/instrumental_agent)
 
 ## Usage
 
 You will need to set the API token. API tokens can be found in the [project tokens documentation](https://instrumentalapp.com/docs/tokens) or in your user settings page. Use the 'enabled' flag to control if the agent actually reports. This is useful for not reporting in dev/test/staging/etc. environments.
 
 ````javascript
-var I = require('instrumental-node');
+var I = require('instrumental_agent);
 I.configure({
   // from here: https://instrumentalapp.com/docs/tokens
   apiKey:  'project_token',
@@ -69,7 +69,7 @@ Make a PR! Say roughly what you've changed, why you did so, and any ancillary da
 8. Push to GitHub
 9. `npm publish`
 10. Tag version: `git tag 'vX.Y.Z' && git push --tags`
-11. Verify update on https://www.npmjs.com/package/instrumental-node
+11. Verify update on https://www.npmjs.com/package/instrumental_agent
 12. Refresh documentation on instrumentalapp.com
 
 # Cool Contributors :sunglasses:
