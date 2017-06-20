@@ -1,6 +1,6 @@
 {
   "name": "instrumental-node",
-  "version": "2.0.0",
+  "version": "2.0.0.1",
   "engines": {
     "node": ">=5.1 <=8"
   },
