@@ -1,5 +1,8 @@
 # instrumental_agent Changelog
 
+## 2.0.3 - 2017/06/20
+* README fixes
+
 ## 2.0.2 - 2017/06/20
 * complete rename
 
