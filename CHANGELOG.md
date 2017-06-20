@@ -1,5 +1,8 @@
 # instrumental-node Changelog
 
+## 2.0.1 - 2017/06/20
+* rename node package `instrumental-node` -> `instrumental_agent`
+
 ## 2.0.0 - 2017/06/20
 * node 7 support
 * fix potential socket memory leak
