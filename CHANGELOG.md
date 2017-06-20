@@ -1,5 +1,12 @@
 # instrumental-node Changelog
 
+## 2.0.0 - 2017/06/20
+* node 7 support
+* fix potential socket memory leak
+* dependency updates
+
+From [#15](https://github.com/Instrumental/instrumental_agent-node/pull/15)
+
 ## 1.0.0 - 2016/03/19
 * Refactoring, readme updates, and bump to 1.0.
 
