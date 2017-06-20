@@ -77,3 +77,6 @@ Make a PR! Say roughly what you've changed, why you did so, and any ancillary da
 * @spacetc62
 * @gmcnaught
 * @janxious
+* @jqr
+* @jason-o-matic
+* @JamesPaden
