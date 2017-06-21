@@ -1,6 +1,6 @@
 {
-  "name": "instrumental_agent",
-  "version": "2.0.4",
+  "name": "instrumental-agent",
+  "version": "2.0.5",
   "engines": {
     "node": ">=5.1 <=8"
   },

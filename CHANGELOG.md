@@ -1,5 +1,8 @@
 # instrumental-agent Changelog
 
+## 2.0.5
+* first version of `instrumental-agent` named agent
+
 ## 2.0.4
 * rename node package again `instrumental_agent` -> `instrumental-agent`
 
