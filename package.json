@@ -11,8 +11,8 @@
   },
   "license": "MIT",
   "keywords": [
-      "instrumental",
-      "monitoring"
+    "instrumental",
+    "monitoring"
   ],
   "scripts": {
     "jshint": "jshint *.js test/*.js lib/*.js",
