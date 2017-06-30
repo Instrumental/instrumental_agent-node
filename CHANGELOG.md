@@ -1,9 +1,15 @@
 # instrumental-agent Changelog
 
-## 2.0.5
+## 2.1.0 - 2017/06/30
+* add connection timeout option
+* add specific `disconnect()` functionality
+
+From [#17](https://github.com/Instrumental/instrumental_agent-node/pull/17)
+
+## 2.0.5 - 2017/06/21
 * first version of `instrumental-agent` named agent
 
-## 2.0.4
+## 2.0.4 - 2017/06/21
 * rename node package again `instrumental_agent` -> `instrumental-agent`
 
 ## 2.0.3 - 2017/06/20
