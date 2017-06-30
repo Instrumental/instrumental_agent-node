@@ -29,6 +29,9 @@ I.configure({
 
   // optional, default shown
   enabled: true,
+  
+  // optional, default is undefined, connection timeout in ms
+  timeout: 10000,
 });
 
 // increments
@@ -41,6 +44,16 @@ I.gauge('metric.name', 82.12 /*, time = now, count = 1 */);
 I.notice('An event occurred' /*, time = now, duration = 0 */);
 ````
 
+### Special (dis)connection handling
+
+If you need to control the point at which the Agent disconnects from the Instrumental metric collectors, you can manually call `disconnect()`.
+
+```javascript
+var I = require('instrumental-agent');
+I.configure({ /* things */ });
+/* do some work and record metrics */
+I.disconnect();
+```
 
 # Contributing
 
@@ -79,3 +92,4 @@ Make a PR! Say roughly what you've changed, why you did so, and any ancillary da
 * @jqr
 * @jason-o-matic
 * @JamesPaden
+* @pmidge
