@@ -8,9 +8,9 @@ This agent supports custom metric monitoring for Node.js applications. It provid
 
 ## Installation
 
-````shell
+```shell
 npm install instrumental-agent
-````
+```
 
 Package details on [npmjs.com](https://www.npmjs.com/package/instrumental-agent)
 
@@ -18,7 +18,9 @@ Package details on [npmjs.com](https://www.npmjs.com/package/instrumental-agent)
 
 You will need to set the API token. API tokens can be found in the [project tokens documentation](https://instrumentalapp.com/docs/tokens) or in your user settings page. Use the 'enabled' flag to control if the agent actually reports. This is useful for not reporting in dev/test/staging/etc. environments.
 
-````javascript
+### [Configuration](https://github.com/Instrumental/instrumental_agent-node/blob/ed916c307c694483fbdaa2eb709206b6eef093a0/lib/instrumental.js#L17-L30)
+
+```javascript
 var I = require('instrumental-agent');
 I.configure({
   // from here: https://instrumentalapp.com/docs/tokens
@@ -29,18 +31,27 @@ I.configure({
 
   // optional, default shown
   enabled: true,
-  
+
   // optional, default is undefined, connection timeout in ms
   timeout: 10000,
 });
+```
 
-// increments
+### [`increment`](https://github.com/Instrumental/instrumental_agent-node/blob/ed916c307c694483fbdaa2eb709206b6eef093a0/lib/instrumental.js#L164-L175)
+
+```javascript
 I.increment('metric.name' /*, value = 1, time = now, count = 1 */);
+```
 
-// gauges
+### [`gauge`](https://github.com/Instrumental/instrumental_agent-node/blob/ed916c307c694483fbdaa2eb709206b6eef093a0/lib/instrumental.js#L177-L186)
+
+```javascript
 I.gauge('metric.name', 82.12 /*, time = now, count = 1 */);
+```
 
-// notices
+### [`notice`](https://github.com/Instrumental/instrumental_agent-node/blob/ed916c307c694483fbdaa2eb709206b6eef093a0/lib/instrumental.js#L188-L196)
+
+```javascript
 I.notice('An event occurred' /*, time = now, duration = 0 */);
 ````
 
