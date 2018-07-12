@@ -2,7 +2,7 @@
   "name": "instrumental-agent",
   "version": "2.1.0",
   "engines": {
-    "node": ">=5.1 <=8"
+    "node": ">=5.1"
   },
   "description": "Custom metric monitoring for Node applications via Instrumental",
   "repository": {
@@ -20,14 +20,14 @@
     "coverage": "rm -rf coverage; istanbul cover _mocha -- --recursive --reporter spec --bail"
   },
   "dependencies": {
-    "debug": "~2.x"
+    "debug": "^2.6.9"
   },
   "devDependencies": {
-    "jshint": "~2.x",
-    "mocha": "~3.x",
-    "should": "~11.x",
     "istanbul": "~0.x",
-    "mitm": "~1.x"
+    "jshint": "^2.9.5",
+    "mitm": "^1.3.3",
+    "mocha": "^3.5.3",
+    "should": "~11.x"
   },
   "bugs": {
     "url": "https://github.com/instrumental/instrumental_agent-node/issues"
