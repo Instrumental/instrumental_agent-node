@@ -2,7 +2,7 @@
   "name": "instrumental-agent",
   "version": "2.1.0",
   "engines": {
-    "node": ">=5.1"
+    "node": ">=5.1 <10"
   },
   "description": "Custom metric monitoring for Node applications via Instrumental",
   "repository": {
