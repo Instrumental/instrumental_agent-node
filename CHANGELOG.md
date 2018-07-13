@@ -1,5 +1,8 @@
 # instrumental-agent Changelog
 
+## 2.2.0 - 2018/07/13
+* allow versions of node up to 9x
+
 ## 2.1.0 - 2017/06/30
 * add connection timeout option
 * add specific `disconnect()` functionality
