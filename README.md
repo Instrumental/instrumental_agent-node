@@ -104,3 +104,5 @@ Make a PR! Say roughly what you've changed, why you did so, and any ancillary da
 * @jason-o-matic
 * @JamesPaden
 * @pmidge
+* @acanimal
+* @alecgorge

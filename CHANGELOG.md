@@ -1,7 +1,14 @@
 # instrumental-agent Changelog
 
+## 2.3.0 - 2018/07/18
+* allow node 10, fix tests for same
+
+From [#23](https://github.com/Instrumental/instrumental_agent-node/pull/23)
+
 ## 2.2.0 - 2018/07/13
 * allow versions of node up to 9x
+
+From [#20](https://github.com/Instrumental/instrumental_agent-node/pull/20)
 
 ## 2.1.0 - 2017/06/30
 * add connection timeout option
