@@ -6,7 +6,21 @@ const mitm = require('mitm');
 require('should');
 const VERSION = require('../package.json').version;
 
+// For Node 10 (and probably on) grab the InternalSocket that MITM defines and
+// monkey patch it to behave correctly - not to be confused with node 0.10
+// also simplifies the code to remove a check for node 0.10 since that is old
+// see https://github.com/moll/node-mitm/blob/v1.3.3/lib/internal_socket.js#L92-L102
+// for originals
+var NODE_10 = !!process.version.match(/^v10\./)
+const InternalSocket = require("mitm/lib/internal_socket")
+InternalSocket.prototype.writeAsciiString = function(req, data) {
+  this.write(data, "ascii")
+  // console.log("writeascii")
+  if (NODE_10) return 0
+}
+
 describe('Instrumental', () => {
+
   beforeEach(function () { this.mitm = mitm(); });
   afterEach(function () { this.mitm.disable(); });
 
@@ -22,7 +36,7 @@ describe('Instrumental', () => {
     this.mitm.on('connection', (socket) => {
       socket.on('data', (data) => {
         data.toString().should.equal(expectedData[index][0]);
-        if (expectedData[index][1]) { socket.write(expectedData[index][1]); }
+        if (expectedData[index][1]) { socket.write(expectedData[index][1], "ascii"); }
 
         index++;
         if (index === 2) {
@@ -50,7 +64,7 @@ describe('Instrumental', () => {
     this.mitm.on('connection', (socket) => {
       socket.on('data', (data) => {
         data.toString().should.equal(expectedData[index][0]);
-        if (expectedData[index][1]) { socket.write(expectedData[index][1]); }
+        if (expectedData[index][1]) { socket.write(expectedData[index][1], "ascii"); }
 
         index++;
         if (index === 2) {
@@ -88,7 +102,7 @@ describe('Instrumental', () => {
     this.mitm.on('connection', (socket) => {
       socket.on('data', (data) => {
         data.toString().should.equal(expectedData[index][0]);
-        if (expectedData[index][1]) { socket.write(expectedData[index][1]); }
+        if (expectedData[index][1]) { socket.write(expectedData[index][1], "ascii"); }
         index++;
         if (index === 2) { done(); }
       });
